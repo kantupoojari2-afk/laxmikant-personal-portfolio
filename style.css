@@ -319,6 +319,8 @@ ul { list-style: none; }
 }
 .status-progress { background: rgba(255, 193, 77, 0.12); color: #ffc14d; border: 1px solid rgba(255, 193, 77, 0.3); }
 .status-planned  { background: rgba(179, 108, 255, 0.12); color: #c99bff; border: 1px solid rgba(179, 108, 255, 0.3); }
+/* NEW: green badge for completed projects */
+.status-done     { background: rgba(45, 226, 196, 0.12); color: #2de2c4; border: 1px solid rgba(45, 226, 196, 0.3); }
 
 .projects-note { margin-top: 2.5rem; color: var(--muted); text-align: center; }
 .projects-note a { color: var(--accent-1); border-bottom: 1px solid transparent; transition: border-color 0.25s; }
