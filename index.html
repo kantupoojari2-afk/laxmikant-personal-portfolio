@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Organize your studies, one task at a time.</p>
+        </header>
+
+        <div class="task-input">
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Enter your task">
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-summary">
+            <p id="taskCount">0 tasks remaining</p>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <footer>
+            <p>Created by Laxmikant Siddaram Poojari</p>
+            <p>B.E. Computer Science and Engineering</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
