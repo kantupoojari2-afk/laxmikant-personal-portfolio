@@ -1,40 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Student Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Laxmikant Poojari, a Computer Science Engineering student interested in Full Stack Development and Cybersecurity." />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>Laxmikant Poojari | CSE Student Portfolio</title>
+
+  <!-- Google Fonts: Inter (body) + Space Grotesk (headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">LP<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME ===== -->
+    <section class="hero" id="home">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Hello, I'm</p>
+        <h1 class="hero-title reveal">Laxmikant <span class="gradient-text">Poojari</span></h1>
+        <p class="hero-tagline reveal">Building for the web. Learning to secure it.</p>
+        <p class="hero-intro reveal">
+          I'm a second-year Computer Science Engineering student at Moodlakatte Institute of Technology,
+          passionate about Full Stack Development and Cybersecurity. I enjoy turning ideas into clean,
+          working software while learning how systems and networks stay safe.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Science Engineering student who enjoys learning by building. My focus is on
+              Full Stack Development and Cybersecurity, and I'm steadily growing my fundamentals in
+              programming, networking and secure software practices.
+            </p>
+            <p>
+              I'm currently in my 2nd year (3rd semester), and I'm looking to improve my skills through
+              hands-on projects, labs and consistent practice.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <article class="card reveal">
+              <h3>🎓 Education</h3>
+              <p class="card-strong">B.E. in Computer Science Engineering</p>
+              <p>Moodlakatte Institute of Technology</p>
+              <p class="muted">2nd Year · 3rd Semester</p>
+              <p class="muted">1st-Year CGPA: <strong>8.5</strong></p>
+            </article>
+
+            <article class="card reveal">
+              <h3>🚀 Career Interests</h3>
+              <ul class="tag-list">
+                <li>Full Stack Development</li>
+                <li>Cybersecurity</li>
+                <li>Networking</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle reveal">Technologies and concepts I'm working with and continuing to learn.</p>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <h3>🌐 Web Development</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3>💻 Programming</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3>🛠️ Tools</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3>🔐 Networking &amp; Security</h3>
+            <ul class="chips">
+              <li>Networking Basics</li>
+              <li>Cybersecurity Fundamentals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle reveal">Learning-focused projects. Status labels show where each one stands.</p>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🖥️</span>
+              <span class="status status-progress">In Progress</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A responsive dark-themed portfolio built with HTML, CSS and vanilla JavaScript to showcase
+              my skills, projects and contact details.
+            </p>
+            <ul class="chips chips-small">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🦈</span>
+              <span class="status status-progress">In Progress</span>
+            </div>
+            <h3>Wireshark Networking Lab</h3>
+            <p>
+              A hands-on lab to capture and analyse network traffic with Wireshark, exploring how common
+              protocols such as DNS, HTTP and TCP behave.
+            </p>
+            <ul class="chips chips-small">
+              <li>Wireshark</li><li>Networking</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal">
+            <div class="project-top">
+              <span class="project-icon">🔍</span>
+              <span class="status status-planned">Planned</span>
+            </div>
+            <h3>Python Port Scanner</h3>
+            <p>
+              A simple Python tool to check which TCP ports are open on a host, intended for learning
+              about sockets and networking on systems I own or have permission to test.
+            </p>
+            <ul class="chips chips-small">
+              <li>Python</li><li>Sockets</li><li>Networking</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <p class="projects-note reveal">
+          More code and updates on my
+          <a href="https://github.com/kantupoojari2-afk" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get in <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle reveal">Have a question or want to connect? I'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="mailto:kantupoojari2@gmail.com">
+            <span class="contact-icon">✉️</span>
+            <h3>Email</h3>
+            <p>kantupoojari2@gmail.com</p>
+          </a>
+
+          <a class="contact-card reveal" href="https://github.com/kantupoojari2-afk" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">🐙</span>
+            <h3>GitHub</h3>
+            <p>github.com/kantupoojari2-afk</p>
+          </a>
+
+          <a class="contact-card reveal" href="https://www.linkedin.com/in/laxmikant-siddaram-poojari-75013b389" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">💼</span>
+            <h3>LinkedIn</h3>
+            <p>Laxmikant Poojari</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
     <div class="container">
-        <header>
-            <h1>Student Task Manager</h1>
-            <p>Organize your studies, one task at a time.</p>
-        </header>
-
-        <div class="task-input">
-            <input type="text"
-                   id="taskInput"
-                   placeholder="Enter your task">
-
-            <button onclick="addTask()">Add Task</button>
-        </div>
-
-        <div class="task-summary">
-            <p id="taskCount">0 tasks remaining</p>
-        </div>
-
-        <ul id="taskList"></ul>
-
-        <footer>
-            <p>Created by Laxmikant Siddaram Poojari</p>
-            <p>B.E. Computer Science and Engineering</p>
-        </footer>
+      <!-- The year is filled in automatically by script.js -->
+      <p>&copy; <span id="year">2026</span> Laxmikant Poojari. All rights reserved.</p>
     </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
