@@ -401,3 +401,5 @@ ul { list-style: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   * { transition-duration: 0.01ms !important; }
 }
+   .project-link { display: inline-block; margin-top: 1rem; color: var(--accent-1); font-weight: 600; }
+   .project-link:hover { text-decoration: underline; }
