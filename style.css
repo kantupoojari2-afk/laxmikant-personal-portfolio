@@ -401,5 +401,6 @@ ul { list-style: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   * { transition-duration: 0.01ms !important; }
 }
-   .project-link { display: inline-block; margin-top: 1rem; color: var(--accent-1); font-weight: 600; }
-   .project-link:hover { text-decoration: underline; }
+.status-done { background: rgba(45, 226, 196, 0.12); color: #2de2c4; border: 1px solid rgba(45, 226, 196, 0.3); }
+.project-link { display: inline-block; margin-top: 1rem; color: var(--accent-1); font-weight: 600; }
+.project-link:hover { text-decoration: underline; }
